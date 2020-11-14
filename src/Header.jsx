@@ -2,14 +2,21 @@ import React from 'react';
 import './index.css';
 import logo from "./images/logo.png";
 function Header(){
+    const openMenu = () =>{
+        document.querySelector('.mobile-menu').classList.add("open");
+    }
+    const closeMenu = () =>{
+        document.querySelector('.mobile-menu').classList.remove("open");
+    }
     return (
         <>
            <div className ="header">
-           <div className="mobile-logo">
-                <p><i class="fas fa-bars"></i></p>
-                <img src = {logo} alt="banner" className="mlogo"/>
-            </div>
+               <div className="mobile-logo">
+                <p><i class="fas fa-bars" onClick ={openMenu}></i></p>
+                <div><img src = {logo} alt="banner" className="mlogo"/></div>
+              </div>
             <div className="mobile-menu">
+                <button onClick ={closeMenu}>x</button>
                 <div className="active"> <a href = "#">Home</a> </div>
                 <div> <a href = "#">Bussiness Solutions</a> </div>
                 <div> <a href = "#">Press</a> </div>

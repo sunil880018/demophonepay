@@ -24,8 +24,7 @@ body{
   align-items: center;
   position: fixed;
   z-index: 2;
-  border-bottom: 1px solid #ccc;
-  box-shadow: 0px 0px 3px 0px #ccc;
+  box-shadow: 0px 0px 5px 0px #ccc;
 }
 
 .logo{
@@ -54,7 +53,7 @@ body{
   width:100%;
   height: 500px;
   position: relative;
-  top: 75px;
+  top: 66px;
   background: url("./images/hp-banner1.png") no-repeat center center/cover;
   z-index:1;
 }
@@ -108,6 +107,7 @@ body{
 .fast-explain h2{
   color: #323232;
   font-size: 20px;
+  font-weight: bold;
 }
 .fast-explain p{
   color: #333;
@@ -234,7 +234,9 @@ body{
   font-weight: 200;
   font-size: 20px;
 }
-
+.bussiness-details p{
+  color: #333;
+}
 .progress{
   height: auto;
   background-color: #f2f2f2;
@@ -269,7 +271,14 @@ body{
   color: #4a4a4a;
   font-weight: 200;
 }
+.all-card .bussi-p{
+  margin-top: 85px;
+}
+.all-card .bussi-p i{
+   color: #361968;
+}
 .progress button{
+  margin-top: 40px;
   background-color: #10d6f2;
     color: #fff;
     font-weight: bold;
@@ -280,7 +289,6 @@ body{
     border-radius: 30px 30px;
     font-family: UniNeue,sans-serif,Helvetica,Arial;
     border:1px solid #10d6f2;
-    font-weight: 200;
     cursor: pointer;
 }
 .progress h1{
@@ -381,13 +389,13 @@ body{
 @media (max-width: 500px) {
   .header{
     width: 100%;
-    height: 75px;
+    height: 65px;
     display: block;
     background-color: #fff;
     position: fixed;
     z-index: 2;
     border-bottom: 1px solid #ccc;
-    box-shadow: 0px 0px 3px 0px #ccc;
+    box-shadow: 0px 0px 5px 0px #ccc;
   }
   .logo{
     display: none;
@@ -396,6 +404,7 @@ body{
     display: none;
   }
   .mobile-logo{
+    height: 70px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -406,38 +415,66 @@ body{
     color: #5f259f;
     cursor: pointer;
   }
+  .mobile-logo div{
+    flex:1;
+    text-align: center;
+  }
   .mobile-logo .mlogo{
     width: 160px;
-    height: 85px;
+    height: 110px;
   }
   .mobile-menu{
     display: block;
+    height: 100%;
     background-color: #fff;
     transform: translateX(-1000px);
-    transition: transform 0.5s ease-in-out;
+    transition: all 0.5s;
   }
   .mobile-menu a{
     text-decoration: none;
     color: #333;
     line-height: 2;
+    font-size: 1rem;
+  }
+  .mobile-menu a:hover{
+    color: #5f259f;
   }
   .banner{
     width: 100%;
   }
-  .show{
+  .open{
+    height: 100vh;
+    margin-top: -6px;
     transform: translateX(0px);
+   }
+   .open div{
+     padding: 10px;
+   }
+   .mobile-menu button{
+    background-color: #fff;
+    color: #000;
+    border-radius: 50%;
+    float: right;
+    margin: 10px;
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    border: 1px solid #fff;
    }
   .banner button{
     margin-left: -60px;
   }
   .fastSecure{
-    flex-direction: column;
+    flex-direction: column-reverse;
     margin-top: 100px;
   }
   .fast-explain{
     width: 365px;
+    padding: 10px;
   }
-  
+  .para p{
+    padding: 10px;
+  }
   .fast-video{
     width: 300px;
     height: 350px;
@@ -456,6 +493,7 @@ body{
     .safety img {
       width: 100%;
       height: 250px;
+      padding: 0px 10px;
     }
     .para {
       width: 100%;
@@ -466,6 +504,7 @@ body{
       width: 95%;
       flex-direction: column;
       height: 100%;
+      margin-top: 60px;
     }
     .trust-banner .trust {
       height: 100px;
@@ -474,18 +513,22 @@ body{
     margin-top: 30px;
   }
   .pci-iso{
-    flex-direction: column;
+    flex-direction: row;
+    margin-left: -65px;
   }
   .pci-iso img{
     margin-top: 20px;
   }
-
+ .partner h1{
+   line-height: 1.5;
+ }
   .social {
     width: 100%;
     height: 87px;
    }
    .bussiness{
-     flex-direction: column;
+    flex-direction: column-reverse;
+    margin-top: 50px;
    }
 
    .money{
@@ -513,7 +556,10 @@ body{
      width: 100%;
    }
    .footer{
-     flex-direction: column;
-     align-items: center;
+     display:grid;
+     grid-template-columns: repeat(2,1fr);
+   }
+   .footer li a{
+       padding: 10px;
    }
 }
