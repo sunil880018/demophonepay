@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/demophonepay/static/css/main.f2f32f1c.chunk.css",
-    "main.js": "/demophonepay/static/js/main.09aba181.chunk.js",
-    "main.js.map": "/demophonepay/static/js/main.09aba181.chunk.js.map",
+    "main.css": "/demophonepay/static/css/main.44de71cf.chunk.css",
+    "main.js": "/demophonepay/static/js/main.7c50f3c8.chunk.js",
+    "main.js.map": "/demophonepay/static/js/main.7c50f3c8.chunk.js.map",
     "runtime-main.js": "/demophonepay/static/js/runtime-main.a6ad3737.js",
     "runtime-main.js.map": "/demophonepay/static/js/runtime-main.a6ad3737.js.map",
     "static/js/2.615658f1.chunk.js": "/demophonepay/static/js/2.615658f1.chunk.js",
     "static/js/2.615658f1.chunk.js.map": "/demophonepay/static/js/2.615658f1.chunk.js.map",
     "index.html": "/demophonepay/index.html",
-    "static/css/main.f2f32f1c.chunk.css.map": "/demophonepay/static/css/main.f2f32f1c.chunk.css.map",
+    "static/css/main.44de71cf.chunk.css.map": "/demophonepay/static/css/main.44de71cf.chunk.css.map",
     "static/js/2.615658f1.chunk.js.LICENSE.txt": "/demophonepay/static/js/2.615658f1.chunk.js.LICENSE.txt",
     "static/media/index.css": "/demophonepay/static/media/trust-banner.861f2625.png",
     "static/media/home-fast-secure.0cd9496e.mp4": "/demophonepay/static/media/home-fast-secure.0cd9496e.mp4",
@@ -19,7 +19,7 @@
   "entrypoints": [
     "static/js/runtime-main.a6ad3737.js",
     "static/js/2.615658f1.chunk.js",
-    "static/css/main.f2f32f1c.chunk.css",
-    "static/js/main.09aba181.chunk.js"
+    "static/css/main.44de71cf.chunk.css",
+    "static/js/main.7c50f3c8.chunk.js"
   ]
 }
